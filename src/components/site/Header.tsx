@@ -31,10 +31,13 @@ export function Header() {
       }`}
     >
       <div className="container-prime flex items-center justify-between h-20">
-        <Link to="/" className="flex items-baseline gap-2 text-ivory">
-          <span className="font-display text-2xl tracking-wide">Casa Tua</span>
-          <span className="eyebrow !text-bronze-light">Prime</span>
-        </Link>
+<Link to="/" className="flex items-center">
+  <img
+    src="/logo_site.jpeg"
+    alt="Casa Tua Prime"
+    className="h-10 w-auto object-contain"
+  />
+</Link>
 
         <nav className="hidden lg:flex items-center gap-10">
           {links.map((l) => (
