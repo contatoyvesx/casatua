@@ -84,11 +84,11 @@ function HomePage() {
           <div className="max-w-3xl animate-fade-up">
             <p className="eyebrow !text-bronze-light mb-6">Casa Tua Prime · Marcenaria autoral</p>
             <h1 className="font-display text-5xl md:text-7xl lg:text-8xl text-ivory leading-[1.05] tracking-tight">
-              Ambientes que traduzem o seu jeito de viver.
+              Móveis planejados para transformar sua casa, sem complicação.
             </h1>
             <p className="mt-8 text-lg text-ivory/80 max-w-xl leading-relaxed">
-              Móveis planejados sob medida, com design exclusivo, materiais nobres e
-              acabamento impecável. Cada projeto é único — assim como você.
+              Inspirados no dia a dia da @casatua.prime: projetos sob medida com estética
+              clean, excelente aproveitamento de espaço e acabamento premium.
             </p>
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <a
@@ -99,12 +99,14 @@ function HomePage() {
               >
                 Solicitar Orçamento <ArrowRight size={14} className="icon-spin-on-hover" />
               </a>
-              <Link
-                to="/projetos"
+              <a
+                href={buildWhatsAppLink()}
+                target="_blank"
+                rel="noreferrer"
                 className="group inline-flex items-center justify-center gap-2 px-8 py-4 border border-ivory/40 text-ivory text-xs tracking-[0.25em] uppercase hover:bg-ivory hover:text-charcoal transition-all duration-300"
               >
-                Ver Projetos <ArrowRight size={14} className="icon-spin-on-hover" />
-              </Link>
+                Falar com especialista <ArrowRight size={14} className="icon-spin-on-hover" />
+              </a>
             </div>
           </div>
         </div>
@@ -158,9 +160,8 @@ function HomePage() {
               Cada peça nasce de uma <em className="text-bronze not-italic">conversa</em>, ganha forma no <em className="text-bronze not-italic">desenho</em> e se torna eterna na <em className="text-bronze not-italic">marcenaria</em>.
             </h2>
             <p className="mt-8 text-muted-foreground text-lg leading-relaxed max-w-xl">
-              Há mais de uma década criamos móveis planejados que combinam funcionalidade,
-              design contemporâneo e o melhor da marcenaria brasileira. Atendemos com
-              exclusividade — um projeto por vez, do briefing à instalação.
+              Desenvolvemos cozinhas, closets, painéis, dormitórios e home offices com foco
+              em funcionalidade real, beleza duradoura e acabamento de alto padrão.
             </p>
             <div className="mt-10 grid grid-cols-3 gap-6 max-w-md">
               {[
@@ -213,12 +214,14 @@ function HomePage() {
                 Projetos selecionados.
               </h2>
             </div>
-            <Link
-              to="/projetos"
+            <a
+              href={buildWhatsAppLink()}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center gap-2 text-sm tracking-[0.2em] uppercase text-bronze hover:gap-4 transition-all duration-300"
             >
-              Ver todos <ArrowRight size={16} />
-            </Link>
+              Solicitar catálogo <ArrowRight size={16} />
+            </a>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {featured.map((p, i) => (
@@ -314,7 +317,8 @@ function HomePage() {
             O seu próximo ambiente começa com uma conversa.
           </h2>
           <p className="mt-8 text-ivory/75 text-lg max-w-xl mx-auto">
-            Conte-nos sobre seu projeto. Faremos um orçamento personalizado, sem compromisso.
+            Chame no WhatsApp e receba atendimento rápido para tirar dúvidas, pedir referência
+            de projetos e iniciar seu orçamento.
           </p>
           <div className="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
             <a
@@ -325,12 +329,14 @@ function HomePage() {
             >
               WhatsApp <ArrowRight size={14} />
             </a>
-            <Link
-              to="/contato"
+            <a
+              href={buildWhatsAppLink()}
+              target="_blank"
+              rel="noreferrer"
               className="inline-flex items-center justify-center gap-2 px-10 py-4 border border-ivory/40 text-ivory text-xs tracking-[0.25em] uppercase hover:bg-ivory hover:text-charcoal transition-all duration-300"
             >
-              Formulário de Orçamento
-            </Link>
+              Receber atendimento
+            </a>
           </div>
         </div>
       </section>

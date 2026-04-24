@@ -28,16 +28,7 @@ function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    if (!form.name || !form.phone) {
-      toast.error("Por favor, preencha nome e telefone.");
-      return;
-    }
-    const msg = `Olá! Sou ${form.name}.%0ATelefone: ${form.phone}${
-      form.email ? `%0AE-mail: ${form.email}` : ""
-    }${form.category ? `%0AAmbiente: ${form.category}` : ""}${
-      form.message ? `%0A%0A${form.message}` : ""
-    }`;
-    window.open(`${buildWhatsAppLink()}&text=${msg}`, "_blank");
+    window.open(buildWhatsAppLink(), "_blank");
     toast.success("Redirecionando para o WhatsApp...");
   };
 
@@ -47,11 +38,11 @@ function ContactPage() {
         <div className="container-prime max-w-3xl">
           <p className="eyebrow !text-bronze-light mb-6">Contato</p>
           <h1 className="font-display text-5xl md:text-7xl leading-[1.05]">
-            Vamos desenhar o seu próximo ambiente.
+            Vamos tirar seu projeto do papel.
           </h1>
           <p className="mt-6 text-ivory/75 text-lg max-w-xl">
-            Conte-nos sobre seu projeto. Retornamos em até 24 horas com um orçamento
-            personalizado, sem compromisso.
+            Fale direto com a equipe da CasaTua Prime pelo WhatsApp e receba orientação
+            para orçamento, medidas e próximos passos.
           </p>
         </div>
       </section>
@@ -69,7 +60,7 @@ function ContactPage() {
             </div>
 
             <div className="space-y-6 border-t border-bronze pt-8">
-              <ContactItem icon={Phone} label="Telefone" value="(11) 99999-9999" href="tel:+5511999999999" />
+              <ContactItem icon={Phone} label="Telefone" value="(11) 94500-8989" href="https://wa.me/5511945008989" external />
               <ContactItem icon={MessageCircle} label="WhatsApp" value="Iniciar conversa" href={buildWhatsAppLink()} external />
               <ContactItem icon={Mail} label="E-mail" value="contato@casatuaprime.com.br" href="mailto:contato@casatuaprime.com.br" />
               <ContactItem icon={MapPin} label="Showroom" value="Rua dos Pinheiros, 000 — São Paulo, SP" />
@@ -89,12 +80,12 @@ function ContactPage() {
           >
             <p className="eyebrow mb-2">Solicitar orçamento</p>
             <h2 className="font-display text-3xl md:text-4xl mb-10 leading-tight">
-              Preencha os dados e envie.
+              Preencha os dados e continue no WhatsApp.
             </h2>
 
             <div className="grid md:grid-cols-2 gap-6">
               <Field label="Nome completo *" name="name" value={form.name} onChange={(v) => setForm({ ...form, name: v })} />
-              <Field label="Telefone *" name="phone" value={form.phone} onChange={(v) => setForm({ ...form, phone: v })} placeholder="(11) 99999-9999" />
+              <Field label="Telefone *" name="phone" value={form.phone} onChange={(v) => setForm({ ...form, phone: v })} placeholder="(11) 94500-8989" />
               <Field label="E-mail" name="email" type="email" value={form.email} onChange={(v) => setForm({ ...form, email: v })} />
               <div>
                 <label className="block text-[0.65rem] tracking-[0.25em] uppercase text-muted-foreground mb-2">Ambiente</label>

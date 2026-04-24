@@ -13,8 +13,8 @@ export function Footer() {
             <span className="eyebrow !text-bronze-light">Prime</span>
           </div>
           <p className="text-sm text-ivory/65 leading-relaxed max-w-xs">
-            Móveis planejados sob medida com acabamento de alto padrão. Projetos
-            assinados, marcenaria autoral e atendimento exclusivo.
+            CasaTua Prime Móveis Planejados: projetos sob medida com visual
+            contemporâneo, montagem caprichada e atendimento próximo do início ao fim.
           </p>
           <div className="mt-8">
             <p className="eyebrow mb-3">Newsletter</p>
@@ -38,7 +38,7 @@ export function Footer() {
             <li className="flex items-start gap-3">
               <Phone size={16} className="text-bronze-light mt-0.5 shrink-0" />
               <a href={buildWhatsAppLink()} target="_blank" rel="noreferrer" className="hover:text-bronze-light transition-colors">
-                (11) 99999-9999
+                (11) 94500-8989
               </a>
             </li>
             <li className="flex items-start gap-3">
@@ -57,13 +57,13 @@ export function Footer() {
         <div>
           <h4 className="eyebrow mb-5">Siga-nos</h4>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/casatua.prime/"
             target="_blank"
             rel="noreferrer"
             className="inline-flex items-center gap-3 text-sm text-ivory/75 hover:text-bronze-light transition-colors"
           >
             <Instagram size={18} />
-            @casatuaprime
+            @casatua.prime
           </a>
           <a
             href={buildWhatsAppLink()}

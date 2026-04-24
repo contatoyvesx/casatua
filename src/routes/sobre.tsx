@@ -27,12 +27,11 @@ function AboutPage() {
         <div className="container-prime max-w-4xl">
           <p className="eyebrow !text-bronze-light mb-6">Quem somos</p>
           <h1 className="font-display text-5xl md:text-7xl leading-[1.05]">
-            Móveis que duram. Histórias que ficam.
+            CasaTua Prime, do Instagram para a sua casa.
           </h1>
           <p className="mt-8 text-ivory/75 text-lg leading-relaxed max-w-2xl">
-            A Casa Tua Prime nasceu da paixão pela marcenaria fina e do desejo de criar
-            ambientes verdadeiramente únicos. Há mais de uma década transformamos
-            referências em projetos e projetos em lares.
+            Nosso trabalho mostra o antes e depois real de cada ambiente: marcenaria
+            planejada, soluções inteligentes e acabamento com padrão elevado.
           </p>
         </div>
       </section>
@@ -52,16 +51,15 @@ function AboutPage() {
           <div>
             <p className="eyebrow mb-4">Nossa filosofia</p>
             <h2 className="font-display text-4xl md:text-5xl leading-tight">
-              Cada projeto começa onde o catálogo termina.
+              Cada projeto é pensado para sua rotina, não para um catálogo.
             </h2>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              Acreditamos que móveis planejados não devem se parecer com móveis prontos.
-              Por isso, atendemos um cliente por vez, do briefing à instalação, garantindo
-              dedicação total ao seu projeto.
+              Na CasaTua Prime, cada detalhe é desenhado para resolver o uso real do espaço:
+              circulação, armazenamento, ergonomia e estética em equilíbrio.
             </p>
             <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
-              Nosso ateliê próprio nos permite controlar cada etapa — da escolha das
-              lâminas de madeira ao último detalhe de acabamento.
+              O resultado é o que você vê no nosso Instagram: ambientes elegantes,
+              funcionais e com identidade própria.
             </p>
           </div>
         </div>
