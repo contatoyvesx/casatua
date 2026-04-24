@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { ThemeToggle } from "./ThemeToggle";
+import logo from "@/assets/logo_site.jpeg";
 
 const links: { to: "/" | "/projetos" | "/sobre" | "/contato"; label: string; exact?: boolean }[] = [
   { to: "/", label: "Início", exact: true },
@@ -31,9 +32,10 @@ export function Header() {
       }`}
     >
       <div className="container-prime flex items-center justify-between h-20">
+
 <Link to="/" className="flex items-center">
   <img
-    src="/logo_site.jpeg"
+    src={logo}
     alt="Casa Tua Prime"
     className="h-10 w-auto object-contain"
   />
