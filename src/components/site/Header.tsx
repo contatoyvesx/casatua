@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 import { buildWhatsAppLink } from "@/lib/whatsapp";
 import { ThemeToggle } from "./ThemeToggle";
-import logo from "@/assets/logo_site.jpeg";
+import logo from "@/assets/logo_site.png";
 
 const links: { to: "/" | "/projetos" | "/sobre" | "/contato"; label: string; exact?: boolean }[] = [
   { to: "/", label: "Início", exact: true },
