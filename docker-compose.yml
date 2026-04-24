@@ -1,0 +1,16 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: casa-tua-prime:latest
+    container_name: casa-tua-prime
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    healthcheck:
+      test: ["CMD", "wget", "--no-verbose", "--tries=1", "--spider", "http://localhost/healthz"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
