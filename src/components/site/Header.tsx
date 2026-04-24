@@ -13,33 +13,25 @@ const links: { to: "/" | "/projetos" | "/sobre" | "/contato"; label: string; exa
 ];
 
 export function Header() {
-  const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 24);
-    onScroll();
+    const onScroll = () => {};
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
-    <header
-      className={`fixed top-0 inset-x-0 z-40 transition-all duration-500 ${
-        scrolled || open
-          ? "bg-charcoal/95 backdrop-blur-md border-b border-white/10"
-          : "bg-transparent"
-      }`}
-    >
+    <header className="fixed top-0 inset-x-0 z-40 bg-charcoal/95 backdrop-blur-md border-b border-white/10">
       <div className="container-prime flex items-center justify-between h-20">
 
-<Link to="/" className="flex items-center">
-  <img
-    src={logo}
-    alt="Casa Tua Prime"
-    className="h-10 w-auto object-contain"
-  />
-</Link>
+        <Link to="/" className="flex items-center">
+          <img
+            src={logo}
+            alt="Casa Tua Prime"
+            className="h-14 w-auto object-contain"
+          />
+        </Link>
 
         <nav className="hidden lg:flex items-center gap-10">
           {links.map((l) => (
