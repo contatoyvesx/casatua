@@ -39,8 +39,8 @@ function ProjectsPage() {
             Projetos que assinamos com orgulho.
           </h1>
           <p className="mt-6 text-ivory/70 text-lg max-w-2xl">
-            Uma seleção de ambientes criados por nossa equipe — cada um com história,
-            propósito e identidade próprios.
+            Inspire-se com ambientes publicados no Instagram da CasaTua Prime e fale com
+            nosso time para criar uma versão sob medida para o seu espaço.
           </p>
         </div>
       </section>

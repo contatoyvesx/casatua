@@ -18,10 +18,12 @@ function NotFoundComponent() {
             A página que você procura não existe ou foi movida.
           </p>
           <a
-            href="/"
+            href="https://wa.me/5511945008989"
+            target="_blank"
+            rel="noreferrer"
             className="inline-block mt-8 px-8 py-3 bg-charcoal text-ivory text-xs tracking-[0.2em] uppercase hover:bg-bronze transition-colors"
           >
-            Voltar ao início
+Falar no WhatsApp
           </a>
         </div>
       </div>

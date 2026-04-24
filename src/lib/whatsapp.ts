@@ -1,9 +1,7 @@
-export const WHATSAPP_NUMBER = "5511999999999";
+export const WHATSAPP_NUMBER = "5511945008989";
 
 export const buildWhatsAppLink = (message?: string) => {
-  const text = encodeURIComponent(
-    message ??
-      "Olá! Vim pelo site da Casa Tua Prime e gostaria de solicitar um orçamento.",
-  );
+  if (!message) return `https://wa.me/${WHATSAPP_NUMBER}`;
+  const text = encodeURIComponent(message);
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${text}`;
 };

@@ -103,7 +103,7 @@ function ProjectDetail() {
               <Meta label="Categoria" value={project.category} />
             </div>
             <a
-              href={buildWhatsAppLink(`Olá! Tenho interesse em um projeto similar ao "${project.title}".`)}
+              href={buildWhatsAppLink()}
               target="_blank"
               rel="noreferrer"
               className="inline-flex w-full items-center justify-center gap-2 px-8 py-4 bg-bronze text-ivory text-xs tracking-[0.25em] uppercase hover:bg-[var(--bronze-dark)] transition-colors"
